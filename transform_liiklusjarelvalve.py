@@ -15,4 +15,4 @@ df = pd.read_excel('data/liiklusjarelvalve.xlsx', decimal=',')
 #df = df.drop(columns=['year', 'month', 'day', 'time'])
 
 # Export to Parquet
-df.to_parquet('data/liiklus.parquet', index=False)
+df.to_parquet('superset_build/data/liiklus.parquet', index=False)
