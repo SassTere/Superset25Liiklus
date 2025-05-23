@@ -72,7 +72,9 @@ Avaldatud süütegude andmete allikas on politsei menetlusinfosüsteem POLIS. An
 
 # Andmetöötlus?
 
-## Ühtlustamine “SoidukMark” väljal OpenRefine’iga
+Tööriist: [OpenRefine](https://openrefine.org/)  
+
+## “SoidukMark” välja klasterdamine OpenRefine’iga
 
 ![Image](https://github.com/user-attachments/assets/7aa3e16c-5896-42de-b058-2655fbd987ee)
 
