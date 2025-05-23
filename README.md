@@ -28,8 +28,6 @@ Avaldatud süütegude andmete allikas on politsei menetlusinfosüsteem POLIS. An
 - **Viimati uuendatud:** vajab täpsustamist
 - **Kohalik koopia:** [`data/Liiklus.csv`](data/Liiklus.csv)  
 
-### Veerud
-
 ## Andmeelemendid
 
 | Avaldatava andmeelemendi nimetus         | Kirjeldus                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   |
@@ -69,6 +67,44 @@ Avaldatud süütegude andmete allikas on politsei menetlusinfosüsteem POLIS. An
 | **RikkujaElukoht**                       | Süüteo toimepanija elukoha riik (EST või MUU).                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     |
 | **SyyteoLiik**                           | Näitab, kas süütegu on väärtegu (VT) või kuritegu (KT).                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            |
 
+
+
+
+# Andmetöötlus?
+
+## Ühtlustamine “SoidukMark” väljal OpenRefine’iga
+
+Selleks, et välja **SoidukMark** väärtused (nt “Ford”, “Mercedes-Benz” jmt) muuta ühtlaseks ja kõrvaldada kirjavead (näiteks `Fprd`, `Mersedes Bens` jms), kasutasime OpenRefine’i **Cluster & Edit** funktsionaalsust:
+
+1. Imporditud andmestikus valida veerg **SoidukMark**.
+2. Menüüs **Edit cells → Cluster and edit…** valisin esmalt meetodi **Key collision** (Fingerprint), mis leidis peamised kirjaviisierinevused.
+3. Läbisin automaatselt grupitud klastrid: ühendasin näiteks `Fprd`, `Ford` ja `Ford’ina` kõik ühise stiili **Ford** alla.
+4. Vajadusel vahetasin meetodit **Nearest neighbor** (Levenshtein) klastrite leidmiseks detailsemate variatsioonide puhul.
+5. Pärast klasterdamist ja valideerimist salvestasime muudetud andmed, kus iga sõidukimarki esineb nüüd korrektselt ja ühtlaselt.
+
+---
+
+## Maakondade eraldamine ja kuvamine Superset’is
+
+Superset’is soovisime visualiseerimisel eraldada ja kuvada Eesti maakondi, mille puhul oli vaja teha nimi → kood vastendus. Selleks kasutasin **Data → Reconcile** funktsionaalsust, mis sidus maakondade nimed vastavate ISO 3166-2 koodidega.
+
+| Maakond      | ISO 3166-2 kood |
+|--------------|-----------------|
+| Harjumaa     | EE-37           |
+| Hiiumaa      | EE-39           |
+| Ida-Virumaa  | EE-45           |
+| Jõgevamaa    | EE-50           |
+| Järvamaa     | EE-52           |
+| Läänemaa     | EE-56           |
+| Lääne-Virumaa| EE-60           |
+| Põlvamaa     | EE-64           |
+| Pärnumaa     | EE-68           |
+| Raplamaa     | EE-71           |
+| Saaremaa     | EE-74           |
+| Tartumaa     | EE-79           |
+| Valgamaa     | EE-81           |
+| Viljandimaa  | EE-84           |
+| Võrumaa      | EE-87           | 
 
 
 # Kuidas alustada?
