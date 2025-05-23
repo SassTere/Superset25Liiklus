@@ -16,8 +16,6 @@ Kaasas on ka failid, mis võimaldavad andmebaasi laetud andmete põhjal kuvada S
 
 # Andmestik
 
-## 📊 Andmed
-
 Meie analüüs põhineb **Liiklusjärelevalve käigus avastatud süütegude** andmestikul.
 
 Avaldatud süütegude andmete allikas on politsei menetlusinfosüsteem POLIS. Andmeid kasutades tuleb arvestada, et avaldatavad andmed lähtuvad operatiivtasandi andmebaasist, kuhu sisestatakse esmane registreerimist vajav informatsioon, mis võib edasise menetluse käigus täieneda ja muutuda.
