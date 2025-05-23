@@ -199,7 +199,41 @@ Apache Superset on mugav vabavaraline tööriist andmete analüüsiks visualisee
 2. Vali vasakul menüüst **Docker Hub**.  
 3. sisesta otsingusse **Apache Superset**.  
 4. Vali esimene valik nimega apache/superset.  
-5. Klõpsa paremas ülanurgas **Pull** nupul.
+5. Klõpsa paremas ülanurgas **Pull** nupule.
+
+## Kahe uue Docker-konteineri loomine sama
+
+Seame üles:
+1. Superset’i konteiner, kus on mount’itud meie projekt (`Superset25Liiklus`).
+2. Python’i arendus­konteiner, kus on samuti mount’itud meie projekt.
+
+### Superset’i konteineri seadistamine
+
+> **Märkus:** vaheta `SUPERSET_SECRET_KEY` kindlasti uueks salajaseks võtme­väärtuseks ja hoia see konfidentsiaalsena – ära postita GitHubi ega muudesse avalikesse repodesse!
+
+```bash
+# Käivita Superset konteiner:
+docker run -d \
+  -v ${PWD}:/data:rw \
+  -p 8080:8088 \
+  -e "SUPERSET_SECRET_KEY=suus_salajane_voti" \
+  --name superset \
+  <asenda eelmise sammuga loodud image’i nimega, nt my/superset:duckdb>
+
+# Loo administraatorkasutaja (muuda kasutajanimi, ees- ja perekonnanimi, email ja parool vastavalt vajadusele):
+docker exec -it superset superset fab create-admin \
+  --username admin \
+  --firstname Admin \
+  --lastname Superset \
+  --email admin@example.com \
+  --password admin
+
+# Vii andmebaas versiooniparandused sisse:
+docker exec -it superset superset db upgrade
+
+# Algne Superset’i initsialiseerimine:
+docker exec -it superset superset init
+
 
 
 
