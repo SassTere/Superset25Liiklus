@@ -209,36 +209,7 @@ Seame üles:
 
 ### Superset’i konteineri seadistamine
 
-> **Märkus:** vaheta `SUPERSET_SECRET_KEY` kindlasti uueks salajaseks võtme­väärtuseks ja hoia see konfidentsiaalsena – ära postita GitHubi ega muudesse avalikesse repodesse!
-
-
-### Käivita Superset konteiner:
-```bash
-docker run -d 
-  -v ${PWD}:/data:rw 
-  -p 8080:8088 
-  -e "SUPERSET_SECRET_KEY=parool" 
-  --name my/superset:duckdb 
-```  
-###Loo administraatorkasutaja (muuda kasutajanimi, ees- ja perekonnanimi, email ja parool vastavalt vajadusele):
-```bash
-docker exec -it superset superset fab create-admin 
-  --username admin 
-  --firstname Admin 
-  --lastname Superset 
-  --email admin@example.com 
-  --password admin
-```  
-
-### Vii andmebaas versiooniparandused sisse:
-```bash
-docker exec -it superset superset db upgrade
-```  
-
-### Algne Superset’i initsialiseerimine:
-```bash
-docker exec -it superset superset init
-```
+Täpsed juhised Superseti jooksutamiseks asuvad superset_buil README failis.
 
 
 
