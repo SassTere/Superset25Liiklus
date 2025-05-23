@@ -1,3 +1,4 @@
+![Image](https://github.com/user-attachments/assets/ed9109a6-861d-400b-8b4a-e84bd98eb608)
 # Superset25Liiklus
 
 Superseti ülevaade liiklusjuhtumitest.
