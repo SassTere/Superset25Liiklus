@@ -168,3 +168,23 @@ Võimaldab sirvida ja hallata SSH-, WSL- ja Dev Container-sihtkohti otse VS Code
  ```bash
 - `docker.docker-0.7.0-darwin-arm64@0.7.0`
 ```
+
+
+## Projekti kloonimine ja avamine VS Code’is
+
+1. Ava **VS Code**.  
+2. Klõpsa vasakul küljeribal **Source Control** (Git-ikoon).  
+3. Vajuta üleval **Clone Repository** (või **Clone Git Repository**) nuppu.  
+4. Kleebi URL: https://github.com/SassTere/Superset25Liiklus.git
+ja vajuta **Enter**.  
+5. Vali dialoogis kaust, kuhu soovid salvestada, ja klõpsa **Select Repository Location**.  
+6. Kui kloonimine on lõppenud, vali **Open** või **Open in Current Window**, et projekt VS Code’i aknas avada.
+
+
+
+
+
+
+
+
+
