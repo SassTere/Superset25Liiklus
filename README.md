@@ -143,7 +143,8 @@ df = pd.read_excel('andmed.xlsx')
 # 2) Salvesta Parquet'na
 df.to_parquet('andmed.parquet', compression='snappy')
 ```
---
+Python'i script nimega `transform_liiklusjarelvalve.py` muudab liiklusjarelvalve.xlsx faili liiklus.parquet failiks.
+
 
 # Kuidas alustada?
 
@@ -255,6 +256,13 @@ docker exec -it superset superset init
 ```
 
 5. Superset on nüüd toimias. Ava: http://localhost:8080/
+
+
+### Superset'i Dashboardi ja andmebaasi taastamine.
+
+Dashboardi ja graafikuid on võimalik taastada kasutades `superset_dashboard` kaustas asuvat faili.
+
+Läbi Superseti GUI kasuta Import Dashboard ja Import Datasets valikuid. 
 
 
 
