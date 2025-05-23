@@ -182,7 +182,7 @@ ja vajuta **Enter**.
 
 ## Apache Superset'i paigaldamine
 Apache Superset on mugav vabavaraline tööriist andmete analüüsiks visualiseermiseks.
-[Täpsem juhend Superseti'i seadistamiseks)](https://github.com/SassTere/Superset25Liiklus/blob/main/superset_build/README.md)  
+[Täpsem juhend Superseti'i seadistamiseks)]  (https://github.com/SassTere/Superset25Liiklus/blob/main/superset_build/README.md)  
 
 
 
