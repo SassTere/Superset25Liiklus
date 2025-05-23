@@ -212,48 +212,49 @@ Seame üles:
 
 ### Arenduskeskkonna käivitamine
 
-cmd+shift+p
-Dev Containers:
-Rebuild and Reopen in Container
+## 1. Arenduskeskkonna seadistamine ja käivitamine
 
-Dockeris on nähtav uus Container 
+### 1.1. Olemasoleva Dev Container‘i uuesti ehitamine ja avamine  
+1. Ava **VS Code**.  
+2. Vajuta `Cmd+Shift+P` (Mac) või `Ctrl+Shift+P` (Win/Linux).  
+3. Tippige ja valige **Dev Containers: Rebuild and Reopen in Container**.  
+4. Oota, kuni konteiner ehitatakse ja VS Code avab tööruumi konteineris.  
+5. Ava **Docker Desktop** (või käivita terminalis `docker ps`) ja veendu, et uus arenduskonteiner töötab.
 
-Alternatiivina kasuta:
-### Arenduskeskkonna loomine
-Kasuta klahvikombinatsiooni cmd+shift+p
-kirjuta dev containers 
-Vali add configuration to workspace
-debian
-bullseye
-python devcontainers > OK
-keep defaults
+### 1.2. Uue Dev Container‘i konfiguratsiooni lisamine  
+1. Ava **VS Code**.  
+2. Vajuta `Cmd+Shift+P` või `Ctrl+Shift+P`.  
+3. Tippige ja valige **Dev Containers: Add Dev Container Configuration Files…**.  
+4. Kui küsitakse, klõpsa **Add Configuration to Workspace**.  
+5. Vali **Debian Bullseye with Python** (näiteks `Python 3.12-bullseye`).  
+6. Aktsepteeri vaikimisi seaded, klõpsates **OK** (ära lisa `.github/dependabot.yml`).  
+7. Ava uuesti `Cmd+Shift+P` / `Ctrl+Shift+P` ja vali **Dev Containers: Reopen in Container**.  
+8. Kontrolli Dockeris (`docker ps`), et uus konteiner töötab.  
+9. Arenduskonteinerist väljumiseks klõpsa VS Code’i allosas sinisel ribal **Dev Container** ja vali **Close Remote Connection**.
 
-Open in container
+## 2. Superseti konteineri seadistamine
 
-Dockeris on nähtav uus Container 
+1. Loe täpsemad juhised `superset_build` kaustas olevast README’st.  
+2. Liigu `superset_build` kausta:
+   ```bash
+   cd superset_build
+```
+3. Koosta konteineri image:
+  ```bash
+  docker build -t superset-build .
+```
 
-mine containerist välja: all sinine nupp DEv container > Close remote connection
-
-
-### Superset’i konteineri seadistamine
-
-Täpsed juhised Superseti jooksutamiseks asuvad superset_buil README failis.
-
-cd superset_build  
-
-
-docker build -t superset-build .  
-
+4. Käivita Superset konteiner (asenda SUPERSET_SECRET_KEY enda salajase võtmega): 
+  ```bash
 docker run -d -v ${PWD}:/data:rw -p 8080:8088 -e "SUPERSET_SECRET_KEY=parool" --name superset superset-build
 
-
+Loo administraator ja initsialiseeri andmebaas:
 docker exec -it superset superset fab create-admin --username admin --firstname Admin --lastname Superset --email admin@example.com --password admin
 docker exec -it superset superset db upgrade
 docker exec -it superset superset init
+```
 
-Superset on nüüd jooksmas ilusti.
-
-ava: http://localhost:8080/
+5. Superset on nüüd toimias. Ava: http://localhost:8080/
 
 
 
