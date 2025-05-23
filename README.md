@@ -207,6 +207,37 @@ Seame üles:
 1. Superset’i konteiner, kus on mount’itud meie projekt (`Superset25Liiklus`).
 2. Python’i arendus­konteiner, kus on samuti mount’itud meie projekt.
 
+
+
+
+### Arenduskeskkonna käivitamine
+
+cmd+shift+p
+Dev Containers:
+Rebuild and Reopen in Container
+
+Dockeris on nähtav uus Container 
+
+Alternatiivina kasuta:
+### Arenduskeskkonna loomine
+Kasuta klahvikombinatsiooni cmd+shift+p
+kirjuta dev containers 
+Vali add configuration to workspace
+debian
+bullseye
+python devcontainers > OK
+keep defaults
+
+Open in container
+
+Dockeris on nähtav uus Container 
+
+
+
+
+
+
+
 ### Superset’i konteineri seadistamine
 
 Täpsed juhised Superseti jooksutamiseks asuvad superset_buil README failis.
