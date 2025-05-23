@@ -201,7 +201,7 @@ Apache Superset on mugav vabavaraline tööriist andmete analüüsiks visualisee
 4. Vali esimene valik nimega apache/superset.  
 5. Klõpsa paremas ülanurgas **Pull** nupule.
 
-## Kahe uue Docker-konteineri loomine sama
+## Kahe uue Docker-konteineri loomine
 
 Seame üles:
 1. Superset’i konteiner, kus on mount’itud meie projekt (`Superset25Liiklus`).
@@ -216,7 +216,7 @@ Seame üles:
 docker run -d \
   -v ${PWD}:/data:rw \
   -p 8080:8088 \
-  -e "SUPERSET_SECRET_KEY=suus_salajane_voti" \
+  -e "SUPERSET_SECRET_KEY=uus_salajane_voti" \
   --name superset \
   <asenda eelmise sammuga loodud image’i nimega, nt my/superset:duckdb>
 
