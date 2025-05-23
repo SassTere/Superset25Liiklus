@@ -269,7 +269,7 @@ Läbi Superseti GUI kasuta Import Dashboard ja Import Datasets valikuid.
 Lisa `superset_dashboard/dashboard_export_....zip`fail.
 
 ### Import Datasets
-<img width="340" alt="Image" src="https://github.com/user-attachments/assets/daa8ae07-b580-446f-893d-c0eb14838b35" />
+<img width="327" alt="Image" src="https://github.com/user-attachments/assets/9ee7778f-b55e-46a8-a4ec-0da961ce4660" />
 Lisa `superset_dashboard/superset_export/datasets/Liiklus.yaml`fail.
 
 Vajadusel saab luua uue ühenduse andmebaasiga valides `Connect a database``DuckDB`ja lisades SQLAlchemy URI väljale
