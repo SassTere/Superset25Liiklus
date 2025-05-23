@@ -1,0 +1,30 @@
+slice_name: Maakonnad_koguarv
+description: null
+certified_by: null
+certification_details: null
+viz_type: country_map
+params:
+  datasource: 2__table
+  viz_type: country_map
+  select_country: estonia
+  entity: ISO 3166-2 code
+  metric: count
+  adhoc_filters:
+  - clause: WHERE
+    subject: ToimKpv
+    operator: TEMPORAL_RANGE
+    comparator: No filter
+    expressionType: SIMPLE
+  number_format: SMART_NUMBER
+  linear_color_scheme: oranges
+  extra_form_data: {}
+  dashboards: []
+  annotation_layers: []
+query_context: '{"datasource":{"id":2,"type":"table"},"force":false,"queries":[{"filters":[{"col":"ToimKpv","op":"TEMPORAL_RANGE","val":"No
+  filter"}],"extras":{"having":"","where":""},"applied_time_extras":{},"columns":[],"metrics":["count"],"annotation_layers":[],"series_limit":0,"order_desc":true,"url_params":{},"custom_params":{},"custom_form_data":{}}],"form_data":{"adhoc_filters":[{"clause":"WHERE","comparator":"No
+  filter","expressionType":"SIMPLE","operator":"TEMPORAL_RANGE","subject":"ToimKpv"}],"annotation_layers":[],"dashboards":[],"datasource":"2__table","entity":"ISO
+  3166-2 code","extra_form_data":{},"linear_color_scheme":"oranges","metric":"count","number_format":"SMART_NUMBER","select_country":"estonia","slice_id":2,"viz_type":"country_map","force":false,"result_format":"json","result_type":"full"},"result_format":"json","result_type":"full"}'
+cache_timeout: null
+uuid: 6b15f0de-63af-433b-91bf-6262b76c49c5
+version: 1.0.0
+dataset_uuid: 5d72a441-f1dc-47b3-b94d-6904be6d7931

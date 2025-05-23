@@ -1,0 +1,674 @@
+dashboard_title: "Liiklusj\xE4relvalve k\xE4igus avastatud s\xFC\xFCteod"
+description: null
+css: ''
+slug: null
+certified_by: ''
+certification_details: ''
+published: false
+uuid: 21e8691e-1ec0-4a80-a378-9b62a1604aa2
+position:
+  CHART-8-HM9_1Dn-:
+    children: []
+    id: CHART-8-HM9_1Dn-
+    meta:
+      chartId: 5
+      height: 50
+      sliceName: "BMW-ga 23.06-25.06 vanuse j\xE4rgi"
+      uuid: 2c4c2af5-e2b6-420a-bf0b-0f37100ac9ae
+      width: 3
+    parents:
+    - ROOT_ID
+    - TABS-Vj9JK28zvF
+    - TAB-C9iKbztZPi
+    - ROW-V2Mjyb-ULK
+    type: CHART
+  CHART-PH8MpamnQS:
+    children: []
+    id: CHART-PH8MpamnQS
+    meta:
+      chartId: 10
+      height: 50
+      sliceName: Heatmap Kalender
+      uuid: bee46da8-084f-41b4-a839-eab7b234c775
+      width: 12
+    parents:
+    - ROOT_ID
+    - TABS-Vj9JK28zvF
+    - TAB-C9iKbztZPi
+    - ROW-7MxFQ1Xbnn
+    type: CHART
+  CHART-SgFMVFy8As:
+    children: []
+    id: CHART-SgFMVFy8As
+    meta:
+      chartId: 12
+      height: 50
+      sliceName: Autod
+      uuid: 5a302756-842e-4238-98fc-fe6db0672776
+      width: 4
+    parents:
+    - ROOT_ID
+    - TABS-Vj9JK28zvF
+    - TAB-C9iKbztZPi
+    - ROW-1ivUO69pDL
+    type: CHART
+  CHART-T0Eg_YIiV7:
+    children: []
+    id: CHART-T0Eg_YIiV7
+    meta:
+      chartId: 3
+      height: 50
+      sliceName: "N\xE4dalap\xE4evad v\xF5rdlus soos j\xE4rgi / % osakaal"
+      uuid: 6a7c7de7-da37-4c21-8093-48ae6d4808c7
+      width: 4
+    parents:
+    - ROOT_ID
+    - TABS-Vj9JK28zvF
+    - TAB-C9iKbztZPi
+    - ROW-6cAMR3_iV-
+    type: CHART
+  CHART-WhnigsdHYz:
+    children: []
+    id: CHART-WhnigsdHYz
+    meta:
+      chartId: 11
+      height: 50
+      sliceName: Paragrahvid
+      uuid: 162261a2-6404-4982-b7cf-21d36b72544d
+      width: 4
+    parents:
+    - ROOT_ID
+    - TABS-Vj9JK28zvF
+    - TAB-C9iKbztZPi
+    - ROW-1ivUO69pDL
+    type: CHART
+  CHART-explore-9-1:
+    children: []
+    id: CHART-explore-9-1
+    meta:
+      chartId: 6
+      height: 50
+      sliceName: Linnad aasta
+      sliceNameOverride: "Linnade \xFClevaade 2024"
+      uuid: dc2f3275-cf1f-4d07-ac9c-14518a27d95b
+      width: 5
+    parents:
+    - ROOT_ID
+    - TABS-Vj9JK28zvF
+    - TAB-C9iKbztZPi
+    - ROW-V2Mjyb-ULK
+    type: CHART
+  CHART-wlIlNyHkip:
+    children: []
+    id: CHART-wlIlNyHkip
+    meta:
+      chartId: 2
+      height: 50
+      sliceName: Maakonnad_koguarv
+      uuid: 6b15f0de-63af-433b-91bf-6262b76c49c5
+      width: 4
+    parents:
+    - ROOT_ID
+    - TABS-Vj9JK28zvF
+    - TAB-C9iKbztZPi
+    - ROW-1ivUO69pDL
+    type: CHART
+  CHART-ztzo80nCqQ:
+    children: []
+    id: CHART-ztzo80nCqQ
+    meta:
+      chartId: 4
+      height: 50
+      sliceName: "K\xF5ik 23.06-25.06 vanuse j\xE4rgi"
+      uuid: 1e599627-8cfa-4930-9657-45f7c8b12daa
+      width: 4
+    parents:
+    - ROOT_ID
+    - TABS-Vj9JK28zvF
+    - TAB-C9iKbztZPi
+    - ROW-V2Mjyb-ULK
+    type: CHART
+  DASHBOARD_VERSION_KEY: v2
+  GRID_ID:
+    children: []
+    id: GRID_ID
+    parents:
+    - ROOT_ID
+    type: GRID
+  HEADER_ID:
+    id: HEADER_ID
+    meta:
+      text: "Liiklusj\xE4relvalve k\xE4igus avastatud s\xFC\xFCteod"
+    type: HEADER
+  MARKDOWN-YcS9hF6Izb:
+    children: []
+    id: MARKDOWN-YcS9hF6Izb
+    meta:
+      code: "## 1. Juhtimis\xF5iguse rikkumised\n- **\xA7 201.** Mootors\xF5iduki,\
+        \ maastikus\xF5iduki v\xF5i trammi juhtimine juhtimis\xF5iguseta isiku poolt.\
+        \  \n- **\xA7 202.** Mootors\xF5iduki, maastikus\xF5iduki v\xF5i trammi juhtimis\xF5\
+        iguseta isiku mootors\xF5idukit v\xF5i trammi juhtima lubamine.  \n- **\xA7\
+        \ 423\xB9.** Mootors\xF5iduki, maastikus\xF5iduki v\xF5i trammi juhtimise\
+        \ eest vastava kategooria mootors\xF5iduki v\xF5i trammi juhtimis\xF5iguseta\
+        \ isiku poolt, kui see on toime pandud s\xFCstemaatiliselt.  \n\n## 2. Registreerimine\
+        \ ja numbrim\xE4rgid\n- **\xA7 203.** Kehtestatud korras registreerimata v\xF5\
+        i \xFCmberregistreerimata mootors\xF5iduki v\xF5i maastikus\xF5iduki juhtimise\
+        \ eest \u2013 karistatakse rahatrahviga kuni 100 trahvi\xFChikut.  \n- **\xA7\
+        \ 204.** Kehtestatud korras registreerimata v\xF5i \xFCmberregistreerimata\
+        \ mootors\xF5idukit v\xF5i maastikus\xF5idukit juhtima lubamise eest s\xF5\
+        iduki omaniku, valdaja v\xF5i tehnon\xF5uetele vastavuse v\xF5i k\xE4itamise\
+        \ eest.  \n- **\xA7 205.** Riikliku registreerimism\xE4rgita mootors\xF5iduki\
+        \ v\xF5i maastikus\xF5iduki v\xF5i sellele mootors\xF5idukile v\xF5i maastikus\xF5\
+        idukile mittekuuluva riikliku registreerimism\xE4rgiga s\xF5iduki juhtimise\
+        \ eest \u2013 karistatakse.  \n- **\xA7 206.** N\xF5utavalt kauguselt mitteloetava\
+        \ riikliku registreerim\xE4rgiga mootors\xF5iduki v\xF5i maastikus\xF5iduki\
+        \ juhtimise eest \u2013 karistatakse rahatrahviga kuni k\xFCmme trahvi\xFC\
+        hikut.  \n\n## 3. Tehnon\xF5uetele mittevastav s\xF5iduk\n- **\xA7 207.**\
+        \ Tehnon\xF5uetele vastavuse kontrolli mittel\xE4binud mootors\xF5iduki v\xF5\
+        i trammi juhtimine.  \n- **\xA7 208.** Tehnon\xF5uetele vastavuse kontrolli\
+        \ mittel\xE4binud mootors\xF5idukit v\xF5i trammi juhtima lubamine.  \n- **\xA7\
+        \ 209.** Mootors\xF5iduki v\xF5i maastikus\xF5iduki juhtimise eest, millel\
+        \ tehnilise rikke t\xF5ttu ei ole omal j\xF5ul lubatud s\xF5ita, \u2013 karistatakse\
+        \ rahatrahviga kuni 100 trahvi\xFChikut.  \n- **\xA7 210'5.** Mootors\xF5\
+        iduki juhtimise eest, millel puudub kohustuslik kiiruspiirik, mille kiiruspiirik\
+        \ ei ole t\xF6\xF6korras v\xF5i kiiruspiiriku t\xF6\xF6d h\xE4irida v\xF5\
+        imaldava seadme kasutamise eest \u2013 karistatakse.  \n- **\xA7 211.** Mootors\xF5\
+        iduki juhtimise eest, millel puudub kohustuslik s\xF5idumeerik v\xF5i mille\
+        \ s\xF5idumeerik ei ole t\xF6\xF6korras v\xF5i on n\xF5uetekohaselt plommimata,\
+        \ \u2013 karistatakse rahatrahviga kuni 100 trahvi\xFChikut.  \n\n## 4. S\xF5\
+        idumeerik ja juhi kaart\n- **\xA7 212.** Mootors\xF5idukijuhi poolt teiste\
+        \ t\xF6\xF6de t\xF6\xF6aja k\xE4sitsi salvestuslehtedele v\xF5i v\xE4ljatr\xFC\
+        kile kandmata v\xF5i digitaalsesse s\xF5idumeerikusse manuaalselt sisestamata\
+        \ j\xE4tmise eest \u2013 karistatakse.  \n- **\xA7 214.** Mootors\xF5idukile\
+        \ paigaldatud s\xF5idumeeriku etten\xE4htud juhtudel kasutamata j\xE4tmise\
+        \ v\xF5i s\xF5idumeeriku v\xF5i selle plommi tahtliku rikkumise eest \u2013\
+        \ karistatakse rahatrahviga kuni 100 trahvi\xFChikut.  \n- **\xA7 215.** S\xF5\
+        idumeeriku t\xF6\xF6d h\xE4irida v\xF5imaldava seadmega varustatud mootors\xF5\
+        iduki juhtimise eest \u2013 karistatakse rahatrahviga kuni 300 trahvi\xFC\
+        hikut v\xF5i arestiga.  \n- **\xA7 217.** Mehaanilise v\xF5i digitaalse s\xF5\
+        idumeeriku v\xF5i juhi kaardi kasutamise n\xF5uete rikkumine.  \n- **\xA7\
+        \ 217'1.** Mehaanilise s\xF5idumeeriku salvestuslehtede v\xF5i digitaalses\
+        \ s\xF5idumeerikus salvestatud andmete v\xF5i juhi kaardi lugemise v\xF5imalusele\
+        \ v\xF5i andmete s\xE4ilitamisele kehtestatud n\xF5uete rikkumine.  \n- **\xA7\
+        \ 217'2.** Teise isiku juhikaardi kasutamise eest \u2013 karistatakse rahatrahviga\
+        \ kuni 300 trahvi\xFChikut v\xF5i arestiga.  \n\n## 5. Mootors\xF5iduki \xFC\
+        mberehitus\n- **\xA7 218.** Omavoliliselt \xFCmberehitatud mootors\xF5iduki\
+        \ v\xF5i maastikus\xF5iduki juhtimise eest \u2013 karistatakse rahatrahviga\
+        \ kuni 50 trahvi\xFChikut.  \n\n## 6. Liikluseeskirjade rikkumine ristmikul\
+        \ ja \xFClek\xE4igurajal\n- **\xA7 221.** Juhi poolt ristmikule v\xF5i jalak\xE4\
+        ijate \xFClek\xE4igurajale s\xF5itmine foori keelava tule ajal.  \n- **\xA7\
+        \ 222.** Mootors\xF5iduki- v\xF5i trammijuhi poolt reguleerimata \xFClek\xE4\
+        igurajal jalak\xE4ijale tee mitteandmine.  \n\n## 7. Alkoholi- ja uimastijoobe\
+        \ rikkumised\n- **\xA7 224.** Mootors\xF5iduki, maastikus\xF5iduki v\xF5i\
+        \ trammi juhtimine lubatud alkoholi piirm\xE4\xE4ra \xFCletades.  \n- **\xA7\
+        \ 224'1.** Mootors\xF5idukijuhi \xF5petaja ja juhendaja poolt \xF5ppes\xF5\
+        idu ja s\xF5idupraktika l\xE4biviimine joobeseisundis.  \n- **\xA7 224'2.**\
+        \ Jalgratta, kergliikuri v\xF5i pisimopeedi juhtimine lubatud alkoholi piirm\xE4\
+        \xE4ra \xFCletanuna \u2013 karistatakse rahatrahviga kuni 50 trahvi\xFChikut.\
+        \  \n- **\xA7 226.** Liiklus\xF5nnetuses osalenud juhi poolt p\xE4rast liiklus\xF5\
+        nnetust alkoholi, narkootilise v\xF5i ps\xFChhotroopse aine tarvitamine. \
+        \ \n- **\xA7 424.** Mootors\xF5iduki ja trammi juhtimine joobeseisundis. \
+        \ \n\n## 8. S\xF5idukiiruse \xFCletamine ja kiirusm\xF5\xF5tmise takistamine\n\
+        - **\xA7 227.** Mootors\xF5iduki juhi poolt lubatud s\xF5idukiiruse \xFCletamine.\
+        \  \n- **\xA7 228.** Mootors\xF5iduki juhtimise eest, milles asub kiirusem\xF5\
+        \xF5teseadet avastada v\xF5i selle t\xF6\xF6d h\xE4irida v\xF5imaldav seade,\
+        \ \u2013 karistatakse rahatrahviga kuni 100 trahvi\xFChikut.  \n- **\xA7 229.**\
+        \ Automaatse liiklusj\xE4relevalve s\xFCsteemi m\xF5\xF5tmistegevuse korrap\xE4\
+        rase toimimise takistamise v\xF5i h\xE4irimise eest viisil, mis tegi v\xF5\
+        imatuks \xF5igusrikkumise andmete n\xF5uetekohase dokumenteerimise.  \n\n\
+        ## 9. Muu liiklusrikkumine ja ohutusvarustus\n- **\xA7 230.** M\xF6\xF6das\xF5\
+        idun\xF5uete rikkumine.  \n- **\xA7 231.** Mootors\xF5iduki juhi poolt vastassuunav\xF6\
+        \xF6ndis s\xF5itmise eest, v\xE4lja arvatud juhul, kui see on liiklusn\xF5\
+        uetes lubatud, \u2013 karistatakse rahatrahviga kuni 100 trahvi\xFChikut.\
+        \  \n- **\xA7 232.** Mootors\xF5iduki- v\xF5i trammijuhi poolt raudtee\xFC\
+        les\xF5idukoha \xFCletamise n\xF5uete rikkumise eest \u2013 karistatakse rahatrahviga\
+        \ kuni 100 trahvi\xFChikut.  \n- **\xA7 234.** S\xF5iduki peatamise m\xE4\
+        rguande eiramine.  \n- **\xA7 235.** Maastikus\xF5idukijuhi poolt maastikus\xF5\
+        iduki kohustusliku peatamise m\xE4rguande tahtliku eiramise eest \u2013 karistatakse\
+        \ rahatrahviga kuni 200 trahvi\xFChikut v\xF5i arestiga v\xF5i s\xF5iduki\
+        \ juhtimis\xF5iguse \xE4rav\xF5tmisega.  \n- **\xA7 238.** Mootors\xF5iduki-\
+        \ v\xF5i trammijuhi poolt s\xF5itjate- v\xF5i veoseveo n\xF5uete rikkumise\
+        \ eest \u2013 karistatakse rahatrahviga kuni 100 trahvi\xFChikut.  \n- **\xA7\
+        \ 239.** Turvav\xF6\xF6 n\xF5uetekohaselt kinnitamata j\xE4tmise eest s\xF5\
+        idukijuhi v\xF5i s\xF5itja poolt \u2013 karistatakse rahatrahviga kuni 50\
+        \ trahvi\xFChikut.  \n- **\xA7 239'1.** Motokiivri kasutamise n\xF5uete rikkumise\
+        \ eest s\xF5idukijuhi v\xF5i s\xF5itja poolt \u2013 karistatakse rahatrahviga\
+        \ kuni 50 trahvi\xFChikut.  \n- **\xA7 240.** Lapse ohutuse n\xF5uete rikkumine.\
+        \  \n- **\xA7 259.** Jalak\xE4ija, tasakaaluliikuri juhi, jalgratturi, pisimopeedijuhi,\
+        \ loomveoki juhi v\xF5i s\xF5itja poolt liiklusn\xF5uete muu rikkumine.  \n\
+        - **\xA7 261'2.** Tee p\xFCsivust ja liiklusohutust ohustava s\xF5idukiga\
+        \ liiklemine.  \n- **\xA7 261'3.** Tee p\xFCsivust ja liiklusohutust ohustava\
+        \ liikluse lubamine.  \n\n## 10. \xD5nnetused ja j\xE4reltegevus\n- **\xA7\
+        \ 236.** Liiklus\xF5nnetusest mitteteatamine.  \n- **\xA7 237.** Liiklus\xF5\
+        nnetuse s\xFCndmuskohalt p\xF5genemine v\xF5i liiklus\xF5nnetuses kannatada\
+        \ saanud abitus seisundis oleva inimese abita j\xE4tmine.  \n\n## 11. Parkimine\
+        \ ja peatumine\n- **\xA7 241.** Parkimine keelatud kohas.  \n\n## 12. Juhi\
+        \ t\xF6\xF6- ja puhkeaja reeglite rikkumine\n- **\xA7 245.** Kehtestatust\
+        \ pikema n\xE4dala s\xF5iduaja kasutamise eest mootors\xF5idukijuhi poolt\
+        \ \u2013 karistatakse rahatrahviga kuni 100 trahvi\xFChikut.  \n- **\xA7 246.**\
+        \ Mootors\xF5idukijuhile kehtestatud \xF6\xF6p\xE4evase s\xF5iduaja n\xF5\
+        uete rikkumine.  \n- **\xA7 247.** Kehtestatust pikema kahe j\xE4rjestikuse\
+        \ n\xE4dala s\xF5iduaja kasutamise eest mootors\xF5idukijuhi poolt \u2013\
+        \ karistatakse rahatrahviga kuni 100 trahvi\xFChikut.  \n- **\xA7 248.** Mootors\xF5\
+        idukijuhile kehtestatud vaheaja n\xF5uete rikkumine.  \n- **\xA7 249.** Mootors\xF5\
+        idukijuhile kehtestatud \xF6\xF6p\xE4evase puhkeaja n\xF5uete rikkumine. \
+        \ \n- **\xA7 250.** Kehtestatust l\xFChema igan\xE4dalase puhkeaja kasutamise\
+        \ eest mootors\xF5idukijuhi poolt \u2013 karistatakse rahatrahviga kuni 100\
+        \ trahvi\xFChikut.  \n- **\xA7 251.** Mootors\xF5idukijuhile kehtestatud t\xF6\
+        \xF6graafikun\xF5uete rikkumine.  \n\n## 13. Maksu- ja teekasutustasud\n-\
+        \ **\xA7 261\u2078.** Veoauto juhtimise eest avalikult kasutataval teel, kui\
+        \ teekasutustasu on tasumata, \u2013 karistatakse rahatrahviga kuni 125 trahvi\xFC\
+        hikut.  \n- **\xA7 261\u2079.** Veoauto juhtimise eest avalikult kasutataval\
+        \ teel, kui teekasutustasu on tasutud v\xE4iksemas m\xE4\xE4ras, \u2013 karistatakse\
+        \ rahatrahviga kuni 100 trahvi\xFChikut.  \n\n## 14. Muud \xFCldised n\xF5\
+        uete rikkumised\n- **\xA7 242.** Mootors\xF5iduki- v\xF5i trammijuhi poolt\
+        \ liiklusn\xF5uete muu rikkumine.  \n- **\xA7 260.** Maastikus\xF5iduki liiklemise\
+        \ n\xF5uete rikkumise eest \u2013 karistatakse rahatrahviga kuni 50 trahvi\xFC\
+        hikut.  \n- **\xA7 261.** Mootors\xF5iduki omaniku v\xF5i vastutava kasutaja\
+        \ kohustuse rikkumine.  \n"
+      height: 50
+      width: 8
+    parents:
+    - ROOT_ID
+    - TABS-Vj9JK28zvF
+    - TAB-CDN4Ect6X
+    - ROW-zI_JhSPry2
+    type: MARKDOWN
+  MARKDOWN-d6qQmgzQ4E:
+    children: []
+    id: MARKDOWN-d6qQmgzQ4E
+    meta:
+      code: "# \u2728Liiklusj\xE4relevalve k\xE4igus avastatud s\xFC\xFCteod\n\n\n\
+        <br />\n\nAvaldatud s\xFC\xFCtegude andmete allikas on politsei menetlusinfos\xFC\
+        steem POLIS. Andmeid kasutades tuleb arvestada, et avaldatavad andmed l\xE4\
+        htuvad operatiivtasandi andmebaasist, kuhu sisestatakse esmane registreerimist\
+        \ vajav informatsioon, mis v\xF5ib edasise menetluse k\xE4igus t\xE4ieneda\
+        \ ja muutuda."
+      height: 50
+      width: 4
+    parents:
+    - ROOT_ID
+    - TABS-Vj9JK28zvF
+    - TAB-CDN4Ect6X
+    - ROW-zI_JhSPry2
+    type: MARKDOWN
+  ROOT_ID:
+    children:
+    - TABS-Vj9JK28zvF
+    id: ROOT_ID
+    type: ROOT
+  ROW-1ivUO69pDL:
+    children:
+    - CHART-wlIlNyHkip
+    - CHART-explore-10-1
+    - CHART-explore-11-1
+    - CHART-SgFMVFy8As
+    - CHART-WhnigsdHYz
+    id: ROW-1ivUO69pDL
+    meta:
+      background: BACKGROUND_TRANSPARENT
+    parents:
+    - ROOT_ID
+    - TABS-Vj9JK28zvF
+    - TAB-C9iKbztZPi
+    type: ROW
+  ROW-6cAMR3_iV-:
+    children:
+    - CHART-T0Eg_YIiV7
+    - CHART-explore-12-1
+    id: ROW-6cAMR3_iV-
+    meta:
+      background: BACKGROUND_TRANSPARENT
+    parents:
+    - ROOT_ID
+    - TABS-Vj9JK28zvF
+    - TAB-C9iKbztZPi
+    type: ROW
+  ROW-7MxFQ1Xbnn:
+    children:
+    - CHART-PH8MpamnQS
+    id: ROW-7MxFQ1Xbnn
+    meta:
+      background: BACKGROUND_TRANSPARENT
+    parents:
+    - ROOT_ID
+    - TABS-Vj9JK28zvF
+    - TAB-C9iKbztZPi
+    type: ROW
+  ROW-V2Mjyb-ULK:
+    children:
+    - CHART-8-HM9_1Dn-
+    - CHART-ztzo80nCqQ
+    - CHART-explore-9-1
+    id: ROW-V2Mjyb-ULK
+    meta:
+      background: BACKGROUND_TRANSPARENT
+    parents:
+    - ROOT_ID
+    - TABS-Vj9JK28zvF
+    - TAB-C9iKbztZPi
+    type: ROW
+  ROW-zI_JhSPry2:
+    children:
+    - MARKDOWN-d6qQmgzQ4E
+    - MARKDOWN-YcS9hF6Izb
+    id: ROW-zI_JhSPry2
+    meta:
+      background: BACKGROUND_TRANSPARENT
+    parents:
+    - ROOT_ID
+    - TABS-Vj9JK28zvF
+    - TAB-CDN4Ect6X
+    type: ROW
+  TAB-C9iKbztZPi:
+    children:
+    - ROW-1ivUO69pDL
+    - ROW-7MxFQ1Xbnn
+    - ROW-V2Mjyb-ULK
+    - ROW-6cAMR3_iV-
+    id: TAB-C9iKbztZPi
+    meta:
+      defaultText: Tab title
+      placeholder: Tab title
+      text: "\xDCldvaade"
+    parents:
+    - ROOT_ID
+    - TABS-Vj9JK28zvF
+    type: TAB
+  TAB-CDN4Ect6X:
+    children:
+    - ROW-zI_JhSPry2
+    id: TAB-CDN4Ect6X
+    meta:
+      defaultText: Tab title
+      placeholder: Tab title
+      text: "Andmete \xFCldinfo"
+    parents:
+    - ROOT_ID
+    - TABS-Vj9JK28zvF
+    type: TAB
+  TABS-Vj9JK28zvF:
+    children:
+    - TAB-C9iKbztZPi
+    - TAB-CDN4Ect6X
+    id: TABS-Vj9JK28zvF
+    meta: {}
+    parents:
+    - ROOT_ID
+    type: TABS
+metadata:
+  chart_configuration:
+    '3':
+      id: 3
+      crossFilters:
+        scope: global
+        chartsInScope:
+        - 2
+        - 4
+        - 5
+        - 6
+        - 10
+        - 11
+        - 12
+    '4':
+      id: 4
+      crossFilters:
+        scope: global
+        chartsInScope:
+        - 2
+        - 3
+        - 5
+        - 6
+        - 10
+        - 11
+        - 12
+    '5':
+      id: 5
+      crossFilters:
+        scope: global
+        chartsInScope:
+        - 2
+        - 3
+        - 4
+        - 6
+        - 10
+        - 11
+        - 12
+    '6':
+      id: 6
+      crossFilters:
+        scope: global
+        chartsInScope:
+        - 2
+        - 3
+        - 4
+        - 5
+        - 10
+        - 11
+        - 12
+    '11':
+      id: 11
+      crossFilters:
+        scope: global
+        chartsInScope:
+        - 2
+        - 3
+        - 4
+        - 5
+        - 6
+        - 10
+        - 12
+    '12':
+      id: 12
+      crossFilters:
+        scope: global
+        chartsInScope:
+        - 2
+        - 3
+        - 4
+        - 5
+        - 6
+        - 10
+        - 11
+  global_chart_configuration:
+    scope:
+      rootPath:
+      - ROOT_ID
+      excluded: []
+    chartsInScope:
+    - 2
+    - 3
+    - 4
+    - 5
+    - 6
+    - 10
+    - 11
+    - 12
+  color_scheme: ''
+  refresh_frequency: 0
+  shared_label_colors:
+    '1': '#1FA8C9'
+    '2': '#666666'
+    '3': '#3CCCCB'
+    '4': '#A1A6BD'
+    '5': '#FDE380'
+    '6': '#FCC700'
+    '7': '#5AC189'
+    13-15: '#A868B7'
+    16-17: '#B2B2B2'
+    18-25: '#E04355'
+    26-34: '#A38F79'
+    35-44: '#FEC0A1'
+    45-54: '#EFA1AA'
+    55-64: '#D3B3DA'
+    65-: '#D1C6BC'
+    <NULL>: '#9EE5E5'
+    count: '#FF7F44'
+    0-12: '#454E7C'
+  color_scheme_domain: []
+  expanded_slices: {}
+  label_colors: {}
+  timed_refresh_immune_slices: []
+  cross_filters_enabled: true
+  native_filter_configuration:
+  - id: NATIVE_FILTER-i72eoeER5
+    controlValues:
+      enableEmptyFilter: false
+    name: Aeg
+    filterType: filter_time
+    targets:
+    - {}
+    defaultDataMask:
+      extraFormData:
+        time_range: Last year
+      filterState:
+        value: Last year
+    cascadeParentIds: []
+    scope:
+      rootPath:
+      - ROOT_ID
+      excluded: []
+    type: NATIVE_FILTER
+    description: ''
+    chartsInScope:
+    - 2
+    - 3
+    - 4
+    - 5
+    - 6
+    - 10
+    - 11
+    - 12
+    tabsInScope:
+    - TAB-C9iKbztZPi
+  - id: NATIVE_FILTER-vU-EiGWfg
+    controlValues:
+      enableEmptyFilter: false
+      defaultToFirstItem: false
+      multiSelect: true
+      searchAllOptions: false
+      inverseSelection: false
+    name: Paragrahvid
+    filterType: filter_select
+    targets:
+    - datasetId: 2
+      column:
+        name: ParagrahvTais
+    defaultDataMask:
+      extraFormData: {}
+      filterState: {}
+      ownState: {}
+    cascadeParentIds: []
+    scope:
+      rootPath:
+      - ROOT_ID
+      excluded: []
+    type: NATIVE_FILTER
+    description: ''
+    chartsInScope:
+    - 2
+    - 3
+    - 4
+    - 5
+    - 6
+    - 10
+    - 11
+    - 12
+    tabsInScope:
+    - TAB-C9iKbztZPi
+  - id: NATIVE_FILTER-F0CBbY7KU
+    controlValues:
+      enableEmptyFilter: false
+      defaultToFirstItem: false
+      multiSelect: true
+      searchAllOptions: false
+      inverseSelection: false
+    name: Automargid
+    filterType: filter_select
+    targets:
+    - datasetId: 2
+      column:
+        name: SoidukMark
+    defaultDataMask:
+      extraFormData: {}
+      filterState: {}
+      ownState: {}
+    cascadeParentIds: []
+    scope:
+      rootPath:
+      - ROOT_ID
+      excluded: []
+    type: NATIVE_FILTER
+    description: ''
+    chartsInScope:
+    - 2
+    - 3
+    - 4
+    - 5
+    - 6
+    - 10
+    - 11
+    - 12
+    tabsInScope:
+    - TAB-C9iKbztZPi
+  - id: NATIVE_FILTER-PDw43b9HN
+    controlValues:
+      enableEmptyFilter: false
+      defaultToFirstItem: false
+      multiSelect: true
+      searchAllOptions: false
+      inverseSelection: false
+    name: Sugu
+    filterType: filter_select
+    targets:
+    - datasetId: 2
+      column:
+        name: RikkujaSugu
+    defaultDataMask:
+      extraFormData: {}
+      filterState: {}
+      ownState: {}
+    cascadeParentIds: []
+    scope:
+      rootPath:
+      - ROOT_ID
+      excluded: []
+    type: NATIVE_FILTER
+    description: ''
+    chartsInScope:
+    - 2
+    - 3
+    - 4
+    - 5
+    - 6
+    - 10
+    - 11
+    - 12
+    tabsInScope:
+    - TAB-C9iKbztZPi
+  - id: NATIVE_FILTER-QsoAlLfuw
+    controlValues:
+      enableEmptyFilter: false
+      defaultToFirstItem: false
+      multiSelect: true
+      searchAllOptions: false
+      inverseSelection: false
+    name: Linn
+    filterType: filter_select
+    targets:
+    - datasetId: 2
+      column:
+        name: ValdLinnNimetus
+    defaultDataMask:
+      extraFormData: {}
+      filterState: {}
+      ownState: {}
+    cascadeParentIds: []
+    scope:
+      rootPath:
+      - ROOT_ID
+      excluded: []
+    type: NATIVE_FILTER
+    description: ''
+  default_filters: '{}'
+version: 1.0.0

@@ -1,0 +1,95 @@
+slice_name: "K\xF5ik 23.06-25.06 vanuse j\xE4rgi"
+description: null
+certified_by: null
+certification_details: null
+viz_type: echarts_timeseries_bar
+params:
+  datasource: 2__table
+  viz_type: echarts_timeseries_bar
+  slice_id: 6
+  x_axis: MaakondNimetus
+  time_grain_sqla: P1D
+  x_axis_sort_asc: true
+  x_axis_sort_series: sum
+  x_axis_sort_series_ascending: false
+  metrics:
+  - count
+  groupby:
+  - RikkujaVanus
+  adhoc_filters:
+  - expressionType: SIMPLE
+    subject: ToimKpv
+    operator: TEMPORAL_RANGE
+    comparator: '2024-06-23T00:00:00 : 2024-06-25T00:00:00'
+    clause: WHERE
+    sqlExpression: null
+    isExtra: false
+    isNew: false
+    datasourceWarning: false
+    filterOptionName: filter_tujmtp0c11_x1nri3n4bb
+  - expressionType: SIMPLE
+    subject: RikkujaVanus
+    operator: IN
+    operatorId: IN
+    comparator:
+    - 45-54
+    - 55-64
+    - 13-15
+    - 35-44
+    - 16-17
+    - 0-12
+    - 65-
+    - 26-34
+    - 18-25
+    clause: WHERE
+    sqlExpression: null
+    isExtra: false
+    isNew: false
+    datasourceWarning: false
+    filterOptionName: filter_vwxscn6epm_zp44h19p4k9
+  order_desc: true
+  row_limit: 10000
+  truncate_metric: true
+  show_empty_columns: true
+  comparison_type: values
+  annotation_layers: []
+  forecastPeriods: 10
+  forecastInterval: 0.8
+  orientation: horizontal
+  x_axis_title: ''
+  x_axis_title_margin: 15
+  y_axis_title: ''
+  y_axis_title_margin: 15
+  y_axis_title_position: Left
+  sort_series_type: name
+  sort_series_ascending: true
+  color_scheme: supersetColors
+  show_value: true
+  stack: Stack
+  only_total: true
+  minorTicks: true
+  zoomable: false
+  show_legend: true
+  legendType: scroll
+  legendOrientation: top
+  x_axis_time_format: smart_date
+  xAxisLabelRotation: 0
+  y_axis_format: SMART_NUMBER
+  logAxis: false
+  minorSplitLine: false
+  truncateXAxis: true
+  truncateYAxis: false
+  y_axis_bounds:
+  - null
+  - null
+  rich_tooltip: true
+  tooltipSortByMetric: false
+  tooltipTimeFormat: smart_date
+  extra_form_data: {}
+  dashboards:
+  - 1
+query_context: null
+cache_timeout: null
+uuid: 1e599627-8cfa-4930-9657-45f7c8b12daa
+version: 1.0.0
+dataset_uuid: 5d72a441-f1dc-47b3-b94d-6904be6d7931

@@ -1,0 +1,13 @@
+database_name: DuckDB
+sqlalchemy_uri: duckdb:////data/liiklus.db
+cache_timeout: null
+expose_in_sqllab: true
+allow_run_async: false
+allow_ctas: false
+allow_cvas: false
+allow_dml: false
+allow_file_upload: false
+extra:
+  allows_virtual_table_explore: true
+uuid: 8ff0c4f6-b027-4f54-8810-eec2c58694fb
+version: 1.0.0

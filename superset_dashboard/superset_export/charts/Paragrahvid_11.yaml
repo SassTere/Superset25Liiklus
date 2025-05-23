@@ -1,0 +1,67 @@
+slice_name: Paragrahvid
+description: null
+certified_by: null
+certification_details: null
+viz_type: table
+params:
+  datasource: 2__table
+  viz_type: table
+  slice_id: 11
+  query_mode: aggregate
+  groupby:
+  - ParagrahvTais
+  time_grain_sqla: P1D
+  temporal_columns_lookup:
+    ToimKpv: true
+    aeg: true
+    ToimKell: true
+  metrics:
+  - count
+  - aggregate: null
+    column: null
+    datasourceWarning: false
+    expressionType: SQL
+    hasCustomLabel: true
+    label: Mehed
+    optionName: metric_jy8l59opflp_n0lxxv9tnnc
+    sqlExpression: COUNT(*) FILTER (WHERE RikkujaSugu = 'M')
+  - aggregate: null
+    column: null
+    datasourceWarning: false
+    expressionType: SQL
+    hasCustomLabel: true
+    label: Naised
+    optionName: metric_ubvd79lxi5h_ns9ev3iqpa9
+    sqlExpression: COUNT(*) FILTER (WHERE RikkujaSugu = 'N')
+  all_columns: []
+  percent_metrics: []
+  adhoc_filters:
+  - clause: WHERE
+    comparator: No filter
+    expressionType: SIMPLE
+    isExtra: true
+    operator: TEMPORAL_RANGE
+    subject: ToimKpv
+  order_by_cols: []
+  row_limit: 10000
+  server_page_length: 10
+  order_desc: true
+  table_timestamp_format: smart_date
+  include_search: true
+  show_cell_bars: true
+  color_pn: true
+  conditional_formatting: []
+  extra_form_data: {}
+  dashboards:
+  - 1
+query_context: '{"datasource":{"id":2,"type":"table"},"force":false,"queries":[{"filters":[{"col":"ToimKpv","op":"TEMPORAL_RANGE","val":"No
+  filter"}],"extras":{"time_grain_sqla":"P1D","having":"","where":""},"applied_time_extras":{},"columns":["ParagrahvTais"],"metrics":["count",{"aggregate":null,"column":null,"datasourceWarning":false,"expressionType":"SQL","hasCustomLabel":true,"label":"Mehed","optionName":"metric_jy8l59opflp_n0lxxv9tnnc","sqlExpression":"COUNT(*)
+  FILTER (WHERE RikkujaSugu = ''M'')"},{"aggregate":null,"column":null,"datasourceWarning":false,"expressionType":"SQL","hasCustomLabel":true,"label":"Naised","optionName":"metric_ubvd79lxi5h_ns9ev3iqpa9","sqlExpression":"COUNT(*)
+  FILTER (WHERE RikkujaSugu = ''N'')"}],"orderby":[["count",false]],"annotation_layers":[],"row_limit":10000,"series_limit":0,"order_desc":true,"url_params":{},"custom_params":{},"custom_form_data":{},"post_processing":[]}],"form_data":{"datasource":"2__table","viz_type":"table","slice_id":11,"query_mode":"aggregate","groupby":["ParagrahvTais"],"time_grain_sqla":"P1D","temporal_columns_lookup":{"ToimKpv":true,"aeg":true,"ToimKell":true},"metrics":["count",{"aggregate":null,"column":null,"datasourceWarning":false,"expressionType":"SQL","hasCustomLabel":true,"label":"Mehed","optionName":"metric_jy8l59opflp_n0lxxv9tnnc","sqlExpression":"COUNT(*)
+  FILTER (WHERE RikkujaSugu = ''M'')"},{"aggregate":null,"column":null,"datasourceWarning":false,"expressionType":"SQL","hasCustomLabel":true,"label":"Naised","optionName":"metric_ubvd79lxi5h_ns9ev3iqpa9","sqlExpression":"COUNT(*)
+  FILTER (WHERE RikkujaSugu = ''N'')"}],"all_columns":[],"percent_metrics":[],"adhoc_filters":[{"clause":"WHERE","comparator":"No
+  filter","expressionType":"SIMPLE","isExtra":true,"operator":"TEMPORAL_RANGE","subject":"ToimKpv"}],"order_by_cols":[],"row_limit":10000,"server_page_length":10,"order_desc":true,"table_timestamp_format":"smart_date","include_search":true,"show_cell_bars":true,"color_pn":true,"conditional_formatting":[],"extra_form_data":{},"dashboards":[1],"force":false,"result_format":"json","result_type":"full"},"result_format":"json","result_type":"full"}'
+cache_timeout: null
+uuid: 162261a2-6404-4982-b7cf-21d36b72544d
+version: 1.0.0
+dataset_uuid: 5d72a441-f1dc-47b3-b94d-6904be6d7931

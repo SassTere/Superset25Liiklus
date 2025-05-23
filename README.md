@@ -264,6 +264,14 @@ Dashboardi ja graafikuid on võimalik taastada kasutades `superset_dashboard` ka
 
 Läbi Superseti GUI kasuta Import Dashboard ja Import Datasets valikuid. 
 
+### Import Dashboard 
+<img width="340" alt="Image" src="https://github.com/user-attachments/assets/4d201359-7c97-4cdb-ab9b-4159a53fe179" />
+Lisa `superset_dashboard/dashboard_export_....zip`fail.
+
+### Import Datasets
+<img width="340" alt="Image" src="https://github.com/user-attachments/assets/daa8ae07-b580-446f-893d-c0eb14838b35" />
+Lisa `superset_dashboard/superset_export/datasets/Liiklus.yaml`fail.
+
 Vajadusel saab luua uue ühenduse andmebaasiga valides `Connect a database``DuckDB`ja lisades SQLAlchemy URI väljale
 ```bash
   duckdb:////data/liiklus.db
