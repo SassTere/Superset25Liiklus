@@ -140,9 +140,9 @@ import pandas as pd
 # 1) Lae Excel andmed
 df = pd.read_excel('andmed.xlsx')
 
-# 2) Salvesta Parquet'ina
+# 2) Salvesta Parquet'na
 df.to_parquet('andmed.parquet', compression='snappy')
-
+```
 --
 
 # Kuidas alustada?
