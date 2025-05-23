@@ -184,7 +184,22 @@ ja vajuta **Enter**.
 Apache Superset on mugav vabavaraline tööriist andmete analüüsiks visualiseermiseks.  
 [Täpsem juhend Superseti'i seadistamiseks)](https://github.com/SassTere/Superset25Liiklus/blob/main/superset_build/README.md)  
 
+### Apache Superseti image’i tõmbimine Docker Hub’ist
 
+1. Veendu, et Docker on sinu süsteemis installitud ja käivitunud.  
+2. Ava terminal või käsurida.  
+3. Tõmba ametlik Superseti image:
+   ```bash
+   docker pull apache/superset:latest
+   ```
+
+### Docker Desktop GUI abil Superseti image’i tõmbimine
+
+1. Ava **Docker Desktop** rakendus.  
+2. Vali vasakul menüüst **Docker Hub**.  
+3. sisesta otsingusse **Apache Superset**.  
+4. Vali esimene valik nimega apache/superset.  
+5. Klõpsa paremas ülanurgas **Pull** nupul.
 
 
 
