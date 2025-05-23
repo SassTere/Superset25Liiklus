@@ -214,19 +214,19 @@ Seame üles:
 
 ### Käivita Superset konteiner:
 ```bash
-docker run -d \
-  -v ${PWD}:/data:rw \
-  -p 8080:8088 \
-  -e "SUPERSET_SECRET_KEY=parool" \
-  --name my/superset:duckdb \
+docker run -d 
+  -v ${PWD}:/data:rw 
+  -p 8080:8088 
+  -e "SUPERSET_SECRET_KEY=parool" 
+  --name my/superset:duckdb 
 ```  
 ###Loo administraatorkasutaja (muuda kasutajanimi, ees- ja perekonnanimi, email ja parool vastavalt vajadusele):
 ```bash
-docker exec -it superset superset fab create-admin \
-  --username admin \
-  --firstname Admin \
-  --lastname Superset \
-  --email admin@example.com \
+docker exec -it superset superset fab create-admin 
+  --username admin 
+  --firstname Admin 
+  --lastname Superset 
+  --email admin@example.com 
   --password admin
 ```  
 
