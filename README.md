@@ -22,7 +22,7 @@ Avaldatud süütegude andmete allikas on politsei menetlusinfosüsteem POLIS. An
 
 - **Allikas:**  
   [Liiklusjärelevalve käigus avastatud süüteod - Politseitööga seotud avaandmed)](https://www.politsei.ee/et/juhend/politseitoeoega-seotud-avaandmed/liiklusjarelevalve-kaigus-avastatud-suuteod)  
-  [Liiklusjärelevalve käigus avastatud süüteod CSV)](https://opendata.smit.ee/ppa/csv/liiklusjarelevalve_1.csv 
+  [Liiklusjärelevalve käigus avastatud süüteod CSV)](https://opendata.smit.ee/ppa/csv/liiklusjarelevalve_1.csv)   
 - **Andmete kasutuslitsents:** Creative Commons 3.0  
 - **Avaldatud:** vajab täpsustamist
 - **Viimati uuendatud:** vajab täpsustamist
