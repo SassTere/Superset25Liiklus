@@ -74,6 +74,8 @@ Avaldatud süütegude andmete allikas on politsei menetlusinfosüsteem POLIS. An
 
 ## Ühtlustamine “SoidukMark” väljal OpenRefine’iga
 
+![Image](https://github.com/user-attachments/assets/7aa3e16c-5896-42de-b058-2655fbd987ee)
+
 Selleks, et välja **SoidukMark** väärtused (nt “Ford”, “Mercedes-Benz” jmt) muuta ühtlaseks ja kõrvaldada kirjavead (näiteks `Fprd`, `Mersedes Bens` jms), kasutasime OpenRefine’i **Cluster & Edit** funktsionaalsust:
 
 1. Imporditud andmestikus valida veerg **SoidukMark**.
