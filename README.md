@@ -86,7 +86,7 @@ Selleks, et välja **SoidukMark** väärtused (nt “Ford”, “Mercedes-Benz�
 4. Vajadusel vahetasin meetodit **Nearest neighbor** (Levenshtein) klastrite leidmiseks detailsemate variatsioonide puhul.
 5. Pärast klasterdamist ja valideerimist salvestasime muudetud andmed, kus iga sõidukimarki esineb nüüd korrektselt ja ühtlaselt.
 
----
+--
 
 ## Maakondade eraldamine ja kuvamine Superset’is
 
@@ -110,6 +110,40 @@ Superset’is soovisime visualiseerimisel eraldada ja kuvada Eesti maakondi, mil
 | Viljandimaa  | EE-84           |
 | Võrumaa      | EE-87           | 
 
+--
+
+## Export
+
+Korrastatud andmed exporditi xlsx failiks ja seejärl tehti esimased katsetused andmete visualiseerimisega Excelis.
+
+Superset ei toeta otse XLSX-faile kui andmeallikat, seega tuleb Excel-tabel esmalt teisendada sobivasse, veerupõhisesse andmeformaati. Selleks on hea kasutada Parquet-vormingut, sest:
+
+- **Veerupõhine (columnar) salvestus**  
+  Parquet salvestab andmed veergude kaupa, mis tähendab, et Superset saab päringuid teha ainult vajalike veergude peal, ilma kogu faili lugemata. See vähendab oluliselt I/O-koormust ja kiirendab visualiseerimisi.
+
+- **Tõhus andmekompressioon ja väiksem kettakasutus**  
+  Parquet kasutab efektiivseid kompressiooniskeeme (nt Snappy), mis tähendab, et sama andmemahu puhul kulub ketta- ja mäluruumi märgatavalt vähem kui XLSX- või CSV-faili puhul.
+
+- **Täpne skeemi ja tüüpide informatsioon**  
+  Parquet formaat salvestab veergude andmetüübid (nt integer, float, timestamp) koos metaandmetega. Superset saab selle abil õieti tuvastada mõõdikud ja dimensioonid ning rakendada filtreid ja agregatsioone veatult.
+
+- **Suuremahuliste andmete käsitlemine**  
+  Kui Excel-failid kasvavad kümne- või sadatuhandetes ridadesse, muutub nende laadimine ja päringute tegemine aeglaseks. Parquet võimaldab tööd teha ka miljonite ridadega, säilitades samal ajal jõudluse.
+
+- **Lihtne integreerimine Hadoop/Spark ökosüsteemiga**  
+  Kui tulevikus on plaanis kasutada suuremat andmeplatvormi (nt Apache Spark), on Parquet-vorming standardne ja laialt toetatud, lihtsustades andmete edasist töötlemist ja laadimist Superseti taha.
+
+**Näide konverteerimisest Pythonis**  
+```python
+import pandas as pd
+
+# 1) Lae Excel andmed
+df = pd.read_excel('andmed.xlsx')
+
+# 2) Salvesta Parquet'ina
+df.to_parquet('andmed.parquet', compression='snappy')
+
+--
 
 # Kuidas alustada?
 
