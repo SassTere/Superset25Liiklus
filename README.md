@@ -232,15 +232,28 @@ Open in container
 
 Dockeris on nähtav uus Container 
 
-
-
-
-
+mine containerist välja: all sinine nupp DEv container > Close remote connection
 
 
 ### Superset’i konteineri seadistamine
 
 Täpsed juhised Superseti jooksutamiseks asuvad superset_buil README failis.
+
+cd superset_build  
+
+
+docker build -t superset-build .  
+
+docker run -d -v ${PWD}:/data:rw -p 8080:8088 -e "SUPERSET_SECRET_KEY=parool" --name superset superset-build
+
+
+docker exec -it superset superset fab create-admin --username admin --firstname Admin --lastname Superset --email admin@example.com --password admin
+docker exec -it superset superset db upgrade
+docker exec -it superset superset init
+
+Superset on nüüd jooksmas ilusti.
+
+ava: http://localhost:8080/
 
 
 
