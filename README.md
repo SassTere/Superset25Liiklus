@@ -237,16 +237,16 @@ Seame üles:
 
 1. Loe täpsemad juhised `superset_build` kaustas olevast README’st.  
 2. Liigu `superset_build` kausta:
-   ```bash
+```bash
    cd superset_build
 ```
 3. Koosta konteineri image:
-  ```bash
+```bash
   docker build -t superset-build .
 ```
 
 4. Käivita Superset konteiner (asenda SUPERSET_SECRET_KEY enda salajase võtmega): 
-  ```bash
+```bash
 docker run -d -v ${PWD}:/data:rw -p 8080:8088 -e "SUPERSET_SECRET_KEY=parool" --name superset superset-build
 
 Loo administraator ja initsialiseeri andmebaas:
@@ -264,9 +264,19 @@ Dashboardi ja graafikuid on võimalik taastada kasutades `superset_dashboard` ka
 
 Läbi Superseti GUI kasuta Import Dashboard ja Import Datasets valikuid. 
 
+Vajadusel saab luua uue ühenduse andmebaasiga valides `Connect a database``DuckDB`ja lisades SQLAlchemy URI väljale
+```bash
+  duckdb:////data/liiklus.db
+```
 
-
-
+Vajadusel kasuta SQL Lab'is päringut:
+```bash
+SELECT
+    *,
+    /* DATE + TIME → TIMESTAMP */
+    CAST(ToimKpv AS DATE) + CAST(ToimKell AS TIME) AS aeg
+FROM read_parquet('/data/data/liiklus.parquet');
+```
 
 
 
