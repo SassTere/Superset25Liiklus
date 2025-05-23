@@ -181,7 +181,7 @@ ja vajuta **Enter**.
 6. Kui kloonimine on lõppenud, vali **Open** või **Open in Current Window**, et projekt VS Code’i aknas avada.
 
 ## Apache Superset'i paigaldamine
-Apache Superset on mugav vabavaraline tööriist andmete analüüsiks visualiseermiseks.
+Apache Superset on mugav vabavaraline tööriist andmete analüüsiks visualiseermiseks.  
 [Täpsem juhend Superseti'i seadistamiseks)](https://github.com/SassTere/Superset25Liiklus/blob/main/superset_build/README.md)  
 
 
