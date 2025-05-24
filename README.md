@@ -70,7 +70,7 @@ Avaldatud süütegude andmete allikas on politsei menetlusinfosüsteem POLIS. An
 
 
 
-# Andmetöötlus?
+# Andmete puhastamine
 
 ## Tööriist: [OpenRefine](https://openrefine.org/)  
 
@@ -81,16 +81,16 @@ Avaldatud süütegude andmete allikas on politsei menetlusinfosüsteem POLIS. An
 Selleks, et välja **SoidukMark** väärtused (nt “Ford”, “Mercedes-Benz” jmt) muuta ühtlaseks ja kõrvaldada kirjavead (näiteks `Fprd`, `Mersedes Bens` jms), kasutasime OpenRefine’i **Cluster & Edit** funktsionaalsust:
 
 1. Imporditud andmestikus valida veerg **SoidukMark**.
-2. Menüüs **Edit cells → Cluster and edit…** valisin esmalt meetodi **Key collision** (Fingerprint), mis leidis peamised kirjaviisierinevused.
-3. Läbisin automaatselt grupitud klastrid: ühendasin näiteks `Fprd`, `Ford` ja `Ford’ina` kõik ühise stiili **Ford** alla.
-4. Vajadusel vahetasin meetodit **Nearest neighbor** (Levenshtein) klastrite leidmiseks detailsemate variatsioonide puhul.
-5. Pärast klasterdamist ja valideerimist salvestasime muudetud andmed, kus iga sõidukimarki esineb nüüd korrektselt ja ühtlaselt.
+2. Menüüs **Edit cells → Cluster and edit…** valida esmalt meetod **Key collision** (Fingerprint), millega leitakse peamised kirjaviisierinevused.
+3. Läbi automaatselt grupitud klastrid: ühenda näiteks `Fprd`, `Ford` ja `Ford’ina` kõik ühise stiili **Ford** alla.
+4. Vajadusel vaheta meetodit **Nearest neighbor** (Levenshtein) klastrite leidmiseks detailsemate variatsioonide puhul.
+5. Pärast klasterdamist ja valideerimist salvesta muudetud andmed, kus iga sõidukimarki esineb nüüd korrektselt ja ühe kordusena.
 
 --
 
 ## Maakondade eraldamine ja kuvamine Superset’is
 
-Superset’is soovisime visualiseerimisel eraldada ja kuvada Eesti maakondi, mille puhul oli vaja teha nimi → kood vastendus. Selleks kasutasin **Data → Reconcile** funktsionaalsust, mis sidus maakondade nimed vastavate ISO 3166-2 koodidega.
+Supersetis on võimalik visualiseerimisel eraldada ja kuvada Eesti maakondi, mille puhul on vaja leida nimi → kood vaste. Selleks kasuta **Data → Reconcile** funktsionaalsust, mis sidus maakondade nimed vastavate ISO 3166-2 koodidega.
 
 | Maakond      | ISO 3166-2 kood |
 |--------------|-----------------|
@@ -114,7 +114,7 @@ Superset’is soovisime visualiseerimisel eraldada ja kuvada Eesti maakondi, mil
 
 ## Export
 
-Korrastatud andmed exporditi xlsx failiks ja seejärl tehti esimased katsetused andmete visualiseerimisega Excelis.
+Korrastatud andmed expordi xlsx failiks ja seejärl tee esimased katsetused andmete visualiseerimisega Excelis.
 
 Superset ei toeta otse XLSX-faile kui andmeallikat, seega tuleb Excel-tabel esmalt teisendada sobivasse, veerupõhisesse andmeformaati. Selleks on hea kasutada Parquet-vormingut, sest:
 
@@ -143,15 +143,14 @@ df = pd.read_excel('andmed.xlsx')
 # 2) Salvesta Parquet'na
 df.to_parquet('andmed.parquet', compression='snappy')
 ```
-Python'i script nimega `transform_liiklusjarelvalve.py` muudab liiklusjarelvalve.xlsx faili liiklus.parquet failiks.
-
+--
 
 # Kuidas alustada?
 
 Esmalt veendu, et sul on installitud VS Code
 https://code.visualstudio.com/
 
-Selle projekti raames olid VS Code-i paigadatud järgmised laiendused:
+Selle projekti raames on VS Code-i paigadatud järgmised laiendused:
 
 Võimaldab sirvida ja hallata SSH-, WSL- ja Dev Container-sihtkohti otse VS Code’i külgribal.  
 ```bash
@@ -181,7 +180,7 @@ ja vajuta **Enter**.
 5. Vali dialoogis kaust, kuhu soovid salvestada, ja klõpsa **Select Repository Location**.  
 6. Kui kloonimine on lõppenud, vali **Open** või **Open in Current Window**, et projekt VS Code’i aknas avada.
 
-## Apache Superset'i paigaldamine
+## Apache Superseti paigaldamine
 Apache Superset on mugav vabavaraline tööriist andmete analüüsiks visualiseermiseks.  
 [Täpsem juhend Superseti'i seadistamiseks)](https://github.com/SassTere/Superset25Liiklus/blob/main/superset_build/README.md)  
 
@@ -213,83 +212,34 @@ Seame üles:
 
 ### Arenduskeskkonna käivitamine
 
-## 1. Arenduskeskkonna seadistamine ja käivitamine
+cmd+shift+p
+Dev Containers:
+Rebuild and Reopen in Container
 
-### 1.1. Olemasoleva Dev Container‘i uuesti ehitamine ja avamine  
-1. Ava **VS Code**.  
-2. Vajuta `Cmd+Shift+P` (Mac) või `Ctrl+Shift+P` (Win/Linux).  
-3. Tippige ja valige **Dev Containers: Rebuild and Reopen in Container**.  
-4. Oota, kuni konteiner ehitatakse ja VS Code avab tööruumi konteineris.  
-5. Ava **Docker Desktop** (või käivita terminalis `docker ps`) ja veendu, et uus arenduskonteiner töötab.
+Dockeris on nähtav uus Container 
 
-### 1.2. Uue Dev Container‘i konfiguratsiooni lisamine  
-1. Ava **VS Code**.  
-2. Vajuta `Cmd+Shift+P` või `Ctrl+Shift+P`.  
-3. Tippige ja valige **Dev Containers: Add Dev Container Configuration Files…**.  
-4. Kui küsitakse, klõpsa **Add Configuration to Workspace**.  
-5. Vali **Debian Bullseye with Python** (näiteks `Python 3.12-bullseye`).  
-6. Aktsepteeri vaikimisi seaded, klõpsates **OK** (ära lisa `.github/dependabot.yml`).  
-7. Ava uuesti `Cmd+Shift+P` / `Ctrl+Shift+P` ja vali **Dev Containers: Reopen in Container**.  
-8. Kontrolli Dockeris (`docker ps`), et uus konteiner töötab.  
-9. Arenduskonteinerist väljumiseks klõpsa VS Code’i allosas sinisel ribal **Dev Container** ja vali **Close Remote Connection**.
+Alternatiivina kasuta:
+### Arenduskeskkonna loomine
+Kasuta klahvikombinatsiooni cmd+shift+p
+kirjuta dev containers 
+Vali add configuration to workspace
+debian
+bullseye
+python devcontainers > OK
+keep defaults
 
-## 2. Superseti konteineri seadistamine
+Open in container
 
-1. Loe täpsemad juhised `superset_build` kaustas olevast README’st.  
-2. Liigu `superset_build` kausta:
-```bash
-   cd superset_build
-```
-3. Koosta konteineri image:
-```bash
-  docker build -t superset-build .
-```
-
-4. Käivita Superset konteiner (asenda SUPERSET_SECRET_KEY enda salajase võtmega): 
-```bash
-docker run -d -v ${PWD}:/data:rw -p 8080:8088 -e "SUPERSET_SECRET_KEY=parool" --name superset superset-build
-
-Loo administraator ja initsialiseeri andmebaas:
-docker exec -it superset superset fab create-admin --username admin --firstname Admin --lastname Superset --email admin@example.com --password admin
-docker exec -it superset superset db upgrade
-docker exec -it superset superset init
-```
-
-5. Superset on nüüd toimias. Ava: http://localhost:8080/
+Dockeris on nähtav uus Container 
 
 
-### Superset'i Dashboardi ja andmebaasi taastamine.
+### Superset’i konteineri seadistamine
 
-Dashboardi ja graafikuid on võimalik taastada kasutades `superset_dashboard` kaustas asuvat faili.
+Täpsed juhised Superseti jooksutamiseks asuvad superset_build README failis.
 
-Läbi Superseti GUI kasuta Import Dashboard ja Import Datasets valikuid. 
 
-### Import Dashboard 
 
-<img width="340" alt="Image" src="https://github.com/user-attachments/assets/4d201359-7c97-4cdb-ab9b-4159a53fe179" />  
 
-- Lisa `superset_dashboard/dashboard_export_....zip`fail.
-
-### Import Datasets
-
-<img width="327" alt="Image" src="https://github.com/user-attachments/assets/9ee7778f-b55e-46a8-a4ec-0da961ce4660" />  
-
-- Lisa `superset_dashboard/superset_export/datasets/Liiklus.yaml`fail.  
-
---  
-Vajadusel saab luua uue ühenduse andmebaasiga valides `Connect a database``DuckDB`ja lisades SQLAlchemy URI väljale
-```bash
-  duckdb:////data/liiklus.db
-```
-
-Vajadusel kasuta SQL Lab'is päringut:
-```bash
-SELECT
-    *,
-    /* DATE + TIME → TIMESTAMP */
-    CAST(ToimKpv AS DATE) + CAST(ToimKell AS TIME) AS aeg
-FROM read_parquet('/data/data/liiklus.parquet');
-```
 
 
 
